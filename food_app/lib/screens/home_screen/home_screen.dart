@@ -41,12 +41,22 @@ class HomeScreen extends StatelessWidget {
         ],
         backgroundColor: Color.fromARGB(255, 107, 107, 2),
       ),
-      body: Column(children: [
-        Container(
-          height: 150,
-          color: Colors.red,
-        ),
-      ]),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+        child: Column(children: [
+          Container(
+            height: 150,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: NetworkImage(
+                      'https://media.istockphoto.com/photos/food-background-with-assortment-of-fresh-organic-vegetables-picture-id1203599923?b=1&k=20&m=1203599923&s=170667a&w=0&h=SxSyRNqrW8JQsyh6gCktCwcc16yX-Ymo2-I7NNTRtcA=')),
+              color: Colors.red,
+              borderRadius: BorderRadius.circular(10),
+            ),
+          ),
+        ]),
+      ),
     );
   }
 }
