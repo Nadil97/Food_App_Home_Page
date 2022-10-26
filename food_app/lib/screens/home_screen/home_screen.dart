@@ -43,19 +43,83 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
-        child: Column(children: [
-          Container(
-            height: 150,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: NetworkImage(
-                      'https://media.istockphoto.com/photos/food-background-with-assortment-of-fresh-organic-vegetables-picture-id1203599923?b=1&k=20&m=1203599923&s=170667a&w=0&h=SxSyRNqrW8JQsyh6gCktCwcc16yX-Ymo2-I7NNTRtcA=')),
-              color: Colors.red,
-              borderRadius: BorderRadius.circular(10),
+        child: Column(
+          children: [
+            Container(
+              height: 150,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    fit: BoxFit.cover,
+                    image: NetworkImage(
+                        'https://image.shutterstock.com/image-photo/walnuts-hazelnuts-vegitable-healthy-food-260nw-1912559551.jpg')),
+                color: Colors.red,
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: Row(
+                children: [
+                  Expanded(
+                      child: Container(
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(right: 150),
+                          child: Container(
+                            height: 50,
+                            width: 100,
+                            decoration: BoxDecoration(
+                              color: Color.fromARGB(255, 182, 231, 5),
+                              borderRadius: BorderRadius.only(
+                                  bottomRight: Radius.circular(50),
+                                  bottomLeft: Radius.circular(50)),
+                            ),
+                            child: Center(
+                              child: Text(
+                                'vegi',
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    color: Colors.white,
+                                    shadows: [
+                                      BoxShadow(
+                                        color: Colors.green,
+                                        blurRadius: 10,
+                                        offset: Offset(3, 3),
+                                      ),
+                                    ]),
+                              ),
+                            ),
+                          ),
+                        ),
+                        Text(
+                          '30% off',
+                          style: TextStyle(
+                              fontSize: 40,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 20),
+                          child: Text(
+                            'On all vegitable product',
+                            style: TextStyle(
+                                fontSize: 20,
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        )
+                      ],
+                    ),
+                  )),
+                  Expanded(
+                    child: Container(),
+                  )
+                ],
+              ),
             ),
-          ),
-        ]),
+            Row(
+              children: [],
+            )
+          ],
+        ),
       ),
     );
   }
