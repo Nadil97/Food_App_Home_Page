@@ -8,7 +8,18 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       drawer: Drawer(),
       appBar: AppBar(
-        backgroundColor: Color(0xFFDADA05),
+        title: Text('Home'),
+        actions: [
+          CircleAvatar(
+            radius: 12,
+            backgroundColor: Color.fromARGB(252, 221, 243, 18),
+          ),
+          CircleAvatar(
+            radius: 12,
+            backgroundColor: Color.fromARGB(252, 221, 243, 18),
+          ),
+        ],
+        backgroundColor: Color.fromARGB(255, 107, 107, 2),
       ),
     );
   }
