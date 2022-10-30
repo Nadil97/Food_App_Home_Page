@@ -115,12 +115,20 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-            Row(
-              children: [
-                Text('Herbs Sesonins'),
-                Text('view all'),
-              ],
-            )
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 5),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text('Herbs Sesonins'),
+                  Text(
+                    'view all',
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                ],
+              ),
+            ),
+            Row(),
           ],
         ),
       ),
