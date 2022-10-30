@@ -116,7 +116,10 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Row(
-              children: [],
+              children: [
+                Text('Herbs Sesonins'),
+                Text('view all'),
+              ],
             )
           ],
         ),
