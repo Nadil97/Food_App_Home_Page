@@ -128,7 +128,18 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-            Row(),
+            Row(
+              children: [
+                Container(
+                  height: 230,
+                  width: 160,
+                  decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
