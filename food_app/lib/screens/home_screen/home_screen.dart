@@ -140,8 +140,13 @@ class HomeScreen extends StatelessWidget {
                   ),
                   child: Column(children: [
                     Expanded(
-                      child: Image.network('src'),
+                      flex: 2,
+                      child: Image.network(
+                          'https://4.imimg.com/data4/SE/XR/MY-34748641/fresh-basil-500x500.jpg'),
                     ),
+                    Expanded(
+                      child: Container(),
+                    )
                   ]),
                 ),
               ],
