@@ -154,7 +154,10 @@ class HomeScreen extends StatelessWidget {
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold),
                           ),
-                          Text('Fresh Basil'),
+                          Text(
+                            'Fresh Basil',
+                            style: TextStyle(color: Colors.grey),
+                          ),
                         ]),
                       ),
                     ),
