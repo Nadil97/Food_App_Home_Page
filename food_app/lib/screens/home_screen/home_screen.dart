@@ -145,8 +145,19 @@ class HomeScreen extends StatelessWidget {
                           'https://4.imimg.com/data4/SE/XR/MY-34748641/fresh-basil-500x500.jpg'),
                     ),
                     Expanded(
-                      child: Container(),
-                    )
+                      child: Container(
+                        //some issu heare remove widget
+                        child: Column(children: [
+                          Text(
+                            'Fresh Basil',
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold),
+                          ),
+                          Text('Fresh Basil'),
+                        ]),
+                      ),
+                    ),
                   ]),
                 ),
               ],
